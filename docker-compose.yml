@@ -20,7 +20,7 @@ services:
              - ./php/online-shopping-system/database/onlineshop.sql:/docker-entrypoint-initdb.d/onlineshop.sql
           environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: database
+            MYSQL_DATABASE: Devopsproject
             MYSQL_USER: root
             MYSQL_PASSWORD: root
           ports:
