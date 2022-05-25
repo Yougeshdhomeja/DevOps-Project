@@ -18,3 +18,4 @@ node{
         }
         sh 'docker push yougeshdhomeja/devops'
     }
+}
