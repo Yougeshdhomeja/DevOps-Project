@@ -12,7 +12,8 @@ node{
     }
     stage('PUSH image to Docker Hub')
     {
-        withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
+
+        withCredentials([string(credentialsId: '797bcbfe-384c-42da-ab0b-49bf9464bd5d', variable: 'DHPWD')]) 
         {
             sh "docker login -u yougeshdhomeja -p 'yougesh12++' "
         }
