@@ -12,6 +12,7 @@ node{
     }
     stage('PUSH image to Docker Hub')
     {
+	sh 'sudo chmod 666 /var/run/docker.sock'
        	sh "docker login -u yougeshdhomeja -p 'yougesh12++' "
         
         sh 'docker push yougeshdhomeja/devops'
