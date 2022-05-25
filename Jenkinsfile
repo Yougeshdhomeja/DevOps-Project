@@ -10,5 +10,12 @@ node{
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
     }
-    
+    stage('PUSH image to Docker Hub')
+    {
+        withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
+        {
+            sh "docker login -u yougeshdhomeja -p 'yougesh12++' "
+        }
+        sh 'docker push yougeshdhomeja/devops'
+    }
 }
