@@ -15,6 +15,6 @@ node{
 	
        	sh "docker login -u yougeshdhomeja -p 'yougesh12++' "
         
-        sh 'docker push yougeshdhomeja/devops:latest'
+        sh 'docker push devopsproject_web:latest'
     }
 }
