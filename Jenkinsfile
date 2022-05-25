@@ -12,7 +12,7 @@ node{
     }
     stage('PUSH image to Docker Hub')
     {
-	sh 'sudo apt-get install pass gnupg2'
+	sh 'sudo apt-get install pass gnupg2 -y'
 	sh 'gpg2 – gen-key'	
 	sh 'pass init $gpg_id'
 	sh 'sudo chmod 666 /var/run/docker.sock'
