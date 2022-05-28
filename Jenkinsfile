@@ -15,6 +15,6 @@ node{
 	
        	sh "sudo docker login -u yougeshdhomeja -p 'yougesh12++' "
         
-        sh 'docker push yougeshdhomeja/devops:myfirstimage1'
+        sh 'sudo docker push yougeshdhomeja/devops:myfirstimage'
     }
 }
