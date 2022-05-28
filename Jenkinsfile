@@ -13,7 +13,7 @@ node{
     stage('PUSH image to Docker Hub')
     {
 	
-       	sh "docker login -u yougeshdhomeja -p 'yougesh12++' "
+       	sh "sudo docker login -u yougeshdhomeja -p 'yougesh12++' "
         
         sh 'docker push yougeshdhomeja/devops:myfirstimage'
     }
